@@ -1,42 +1,140 @@
 body {
-    background-color: #077397;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Courier;
 }
 
 h1 {
-    font-family: 'Courier New';
     font-size: xx-large;
     text-align: center;
+    width: 100%;
 }
 
 h2 {
     font-size: x-large;
-    font-family: monospace;
-    color: white;
 }
 
 h3 {
     font-size: large;
-    font-family: arial;
-    color: white;
+}
+
+p {
+    line-height: 20px;
 }
 
 img{
-    border: solid 5px white;
+    border: solid 5px #077397;
     padding: 10px;
     margin: 20px;
     border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 320px;
+    width: auto;
 }
 
 video{
-    border: solid 5px white;
+    border: solid 5px #077397;
     padding: 10px;
     margin: 20px;
     border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 320px;
+    width:auto;
+    object-fit: cover;
 }
 
-li{
+nav {
+    margin: 5px;
+    padding: none;
+    background-color: #DDDDDD;
+    border: solid 5px #077397;
+    width: 200px;
+    height: 644px;
+    float: left;
+    position: fixed;
+}
+
+#skiptomain {
+    position:absolute;
+    left: -500px;
+}
+
+nav ul {
+    margin: none;
+    padding: none;
+    width: 190px;
+    font-size: medium;
+}
+
+nav ul li ul {
+    font-size: small;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    border: solid 1px black;
+}
+
+nav a:hover {
+    background-color: #BBBBBB;
+}
+
+.Element{
+    margin: 5px 5px 5px 210px;
+    padding: 20px;
+    border: solid 40px #077397;
+}
+
+.MainPhoto{
+    border: solid 8px #077397;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+    float: left;
+    height: 600px;
+}
+
+.MainText{
+    border: solid 2px #077397;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    height:600px;
+}
+
+.Gallery{
+    border:solid 2px #077397;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    height: 775px;
+}
+
+table {
+    display: block;
+    border: solid 2px #077397;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+
+ul.Text {
+    display: block;
+    list-style: circle inside;
+    border: solid 2px #077397;
+    border-radius: 30px;
+    padding: 20px 0px;
+}
+
+ul.Text li{
     display: inline-block;
     margin-left: 50px;
 }
+
+/*td li {
+    display: list-item;
+    float: left;
+    margin-left: 20px;
+}*/
