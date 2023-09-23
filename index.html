@@ -12,10 +12,9 @@
     <header> <h1>Pets</h1> </header>
 
     <nav>
-        <a href="#main" id="skiptomain">Skip to main content</a>
-        <ul>
-            <li><a href="index.html">Pets</a>
-                <ul>
+        <ul class="linkList">
+            <li class="current"><a href="index.html">▸ Pets</a>
+                <ul class="linkSublist">
                     <li><a href="index.html#Odie">&nbsp; Odie</a></li>
                     <li><a href="index.html#Dash">&nbsp; Dash</a></li>
                     <li><a href="index.html#Phoenix">&nbsp; Phoenix</a></li>
@@ -24,7 +23,7 @@
                 </ul>
             </li>
             <li><a href="recipes.html">Recipes</a>
-                <ul>
+                <ul class="linkSublist">
                     <li><a href="recipes.html#recipe1">&nbsp; Beef Stroganoff</a></li>
                     <li><a href="recipes.html#recipe2">&nbsp; Chicken Parmesan</a></li>
                     <li><a href="recipes.html#recipe3">&nbsp; Chicken Casserole</a></li>
@@ -33,21 +32,22 @@
                 </ul>
             </li>
             <li><a href="travel.html">Travel</a>
-                <ul>
+                <ul class="linkSublist">
                     <li><a href="travel.html#place1">&nbsp; Kitch-iti-kippi</a></li>
                     <li><a href="travel.html#place2">&nbsp; Yellowstone</a></li>
                     <li><a href="travel.html#place3">&nbsp; Paris</a></li>
                     <li><a href="travel.html#place4">&nbsp; Tahquamenon Falls</a></li>
                 </ul>
             </li>
+            <li><a href="#Odie" id="skiptomain">Back to Top ▲</a></li>
         </ul>
     </nav>
 
     <main id="main">
         <div class="Element" id="Odie">
             <h2>Odie</h2>
-            <img src = "images/Odie_flowers.jpeg" alt = "Handsome dog sitting before red flowers" class="MainPhoto">
             <div class="MainText">
+                <img src = "images/Odie_flowers.jpeg" alt = "Handsome dog sitting before red flowers">
                 <p>Odie is a 3-year-old American Pitbull Terrier. He loves to drink straight from the bathtub faucet, and will stand beside the tub whining 
                     until the water is turned on. Every night, he crawls into bed with his parents and squeezes right between them. He will often paw at 
                     their blankets until one of them lifts it up to let him in.
@@ -56,17 +56,15 @@
 
             <h3>Photo Gallery</h3>
             <div class="Gallery">
-                <video autoplay loop muted>
-                    <source src="images/Odie_goofy.MOV">
-                </video>
+                <img src="images/Odie_goofy.gif">
                 <img src = "images/Odie_spider.jpeg" alt = "Odie dressed as a spider for Halloween">
                 <img src = "images/Odie_winter.jpeg" alt = "Odie dressed in a plaid coat to keep him warm">
                 <img src = "images/Odie_yawn.jpeg" alt = "Odie yawning sweetly">
             </div>
             
             <h3>Likes</h3>
-            <div>
-                <ul class="Text">
+            <div class="Text">
+                <ul class="likes">
                     <li>Squishmallows</li>
                     <li>Zooming around the apartment</li>
                     <li>All forms of cheese</li>
@@ -77,8 +75,8 @@
 
         <div class="Element" id="Dash">
             <h2>Dash</h2>
-            <img src ="images/Dash_Jerry's.jpeg" alt = "Black lab smiling in the sun" class="MainPhoto">
             <div class="MainText">
+                <img src ="images/Dash_Jerry's.jpeg" alt = "Black lab smiling in the sun">
                 <p>Dash is a 12-year-old Black Labrador. Once a playful and energetic dog, he now spends most of his time sleeping in the shade under cars. 
                     He's super friendly and would get into a strangers van for a few pets. 
                 </p>
@@ -93,8 +91,8 @@
             </div>
             
             <h3>Likes</h3>
-            <div>
-                <ul>
+            <div class="Text">
+                <ul class="likes">
                     <li>Barking loudly</li>
                     <li>Laying under cars</li>
                     <li>Waddling forward as he poops</li>
@@ -105,8 +103,8 @@
 
         <div class="Element" id="Phoenix">
             <h2>Phoenix</h2>
-            <img src = "images/Phoenix_grass.jpeg" alt = "" class="MainPhoto">
             <div class="MainText">
+                <img src = "images/Phoenix_grass.jpeg" alt = "">
                 <p>Phoenix was a stray who followed Dash home one day. From what we could tell, he was a Rottweiler Shar-pei mix. 
                     He was a crotchety old man with a lot of attitude, but was extremely loyal and loving. He passed away in 2021.
                 </p>
@@ -122,7 +120,7 @@
             
             <h3>Likes</h3>
             <div class="Text">
-                <ul>
+                <ul class="likes">
                     <li>McDonald's cheeseburgers</li>
                     <li>Being the center of attention</li>
                     <li>Burying his head in the snow</li>
@@ -133,8 +131,8 @@
 
         <div class="Element" id="Ariadne">
             <h2>Ariadne</h2>
-            <img src = "images/Ariadne_car.JPEG" alt = "Ariadne sitting in the back of an SUV" class="MainPhoto">
             <div class="MainText">
+                <img src = "images/Ariadne_car.JPEG" alt = "Ariadne sitting in the back of an SUV">
                 <p>Ariadne is a 1-year-old staffy puppy. Compared to her sister Dahlia, she's more of a people-dog. 
                     However, she doesn't get along well with dogs other than Dahlia and Dash.
                 </p>
@@ -150,7 +148,7 @@
             
             <h3>Likes</h3>
             <div class="Text">
-                <ul>
+                <ul class="likes">
                     <li>Trying to eat rocks</li>
                     <li>Cow ears</li>
                     <li>Chasing animals</li>
@@ -161,8 +159,8 @@
 
         <div class="Element" id="Dahlia">
             <h2>Dahlia</h2>
-            <img src = "images/Dahlia_rock.JPEG" alt = "Dahlia sitting outside" class="MainPhoto">
             <div class="MainText">
+                <img src = "images/Dahlia_rock.JPEG" alt = "Dahlia sitting outside">
                 <p>Dahlia is a 1-year-old staffy puppy from the same litter as her sister, Ariadne. 
                     She is very energetic and vocal, often the instigator of the household. She could win the gold medal for the Olympic high jump event.
                 </p>
@@ -178,7 +176,7 @@
             
             <h3>Likes</h3>
             <div class="Text">
-                <ul>
+                <ul class="likes">
                     <li>Chewing on her sister</li>
                     <li>Playing with Grandpa Dash</li>
                     <li>Stalking guests</li>
